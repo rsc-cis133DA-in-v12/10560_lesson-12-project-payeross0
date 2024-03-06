@@ -5,16 +5,18 @@
 */
 
 body {
-    bg-color: #eee;
+    /* invalid property name */
+    background-color: #eee;
     font-family: Ariel, sans-serif;
-    font-size: 9px;
-    color: #7af0ff;
+    color: #000000;
 }
 
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+/* added opening bracket for block, which fixed additional issues */
+header {
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
@@ -26,8 +28,8 @@ main {
 nav a {
     margin: 10px;
     padding: 2px;
-    background-color: #FFFF00;
-    color: #9D85FF;
+    background-color: #ffffb8;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -44,26 +46,29 @@ img {
 }
 
 table {
-    & width: 100%;
+    /* removed & */
+    width: 100%;
 }
 
 table,
 th,
 td {
     border: 1px solid #FFF;
-    background-color: #FFFF00 border-collapse: collapse;
+    background-color: #ffffb8;
+    /* added semi-colon to separate properties */
+    border-collapse: collapse;
     padding: 10px;
 }
 
 th {
-    background-color: #185f80;
+    background-color: #8dd0ef;
 }
-}
+/* removed extra closing bracket */
 
 footer {
     width: 80%;
     margin: auto;
     text-align: center;
-    background-color: #185f80;
+    background-color: #8dd0ef;
     padding: 20px;
 }

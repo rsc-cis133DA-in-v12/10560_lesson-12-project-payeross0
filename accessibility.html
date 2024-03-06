@@ -4,9 +4,11 @@
     Section: 10560
     Lesson: 12
 -->
-<html>
+<!-- added lang attribute -->
+<html lang="en">
 <head>
-    <title></title>
+    <!-- added title to page -->
+    <title>Accessibility Commitment</title> 
     <meta charset="UTF-8">
     <meta name="author" content="Payeton Ross">
     <link href="css/styles.css" rel="stylesheet">
@@ -14,7 +16,8 @@
 
 <body>
     <header>
-        <h1>Accessibility<h1>
+        <!-- added closing tag for h1 element which fixed other issues -->
+        <h1>Accessibility</h1>
         <nav>
             <a href="#">Accessibility</a>
         </nav>
@@ -27,9 +30,9 @@
             We are committed in ensuring our website is as accessible and easy-to-use as possible for everyone. 
         </p>
 
-        <img src="images/access-image.jpg" alt="Different types of disability">
-
-        <h3>Web Users and Web Accessibility</h5>
+        <img src="images/access-image.jpg" alt="Different types of disabilities">
+        <!-- matched closing heading tag with opening tag -->
+        <h3>Web Users and Web Accessibility</h3>
             <table>
                 <tr>
                     <th>Disability</th>
@@ -76,44 +79,54 @@
                     this brief survey and leave us your name and email address if you'd like us to get back in contact
                     with you.</p>
 
-                <h3>Feedback Type</h3>
+                <h2>Feedback Type</h2>
                 <p>What type of feedback would you like to share? <em>Please select all that apply</em>:</p>
-
-                <input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve Accessibility on the
-                website<br>
-                <input type="checkbox" name="Type" value="Issue"> Issue with the Accessibility of the website<br>
-                <input type="checkbox" name="Type" value="Comment"> Share a comment about how our Accessibility features
-                helped you or others<br>
+                <fieldset>
+                    <legend>Feedback:</legend>
+                        <label><input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve Accessibility on the website</label><br>
+                        <label><input type="checkbox" name="Type" value="Issue"> Issue with the Accessibility of the website</label><br>
+                        <label><input type="checkbox" name="Type" value="Comment"> Share a comment about how our Accessibility features helped you or others</label>  <br>                
+                </fieldset>
 
                 <h3>Satisfaction</h3>
                 <p>How satisfied are you with the Accessibility features we provide?</p>
-
-                <input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied<br>
-                <input type="radio" name="Satisfaction" value="4"> 4<br>
-                <input type="radio" name="Satisfaction" value="3"> 3<br>
-                <input type="radio" name="Satisfaction" value="2"> 2<br>
-                <input type="radio" name="Satisfaction" value="1"> 1<br>
-                <input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied<br>
+                <fieldset>
+                    <legend>Satisfaction:</legend>                
+                        <label><input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied</label><br>
+                        <label><input type="radio" name="Satisfaction" value="4"> 4</label><br>
+                        <label><input type="radio" name="Satisfaction" value="3"> 3</label><br>
+                        <label><input type="radio" name="Satisfaction" value="2"> 2</label><br>
+                        <label><input type="radio" name="Satisfaction" value="1"> 1</label><br>
+                        <label><input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied</label><br>
+                </fieldset>
 
                 <h3>Improvements</h3>
-                <p>Please enter any feedback you have to provide you with a better service:<br>
-
+                <label>Please enter any feedback you have to provide you with a better service:<br>
                     <textarea name="Feedback" rows="5" cols="60"></textarea>
-                </p><br>
+                </label>
+                <br>
 
                 <h3>Contact Details (Optional)</h3>
-                Name: <input type="text" name="FirstName"><br>
-                Email Address: <input type="email" name="EmailAddress"><br>
+                <label>Name: <input type="text" name="FirstName"></label><br>
+                <label>Email Address: <input type="email" name="EmailAddress"></label><br>
 
-                <input type="submit" value="Submit">
+                <button type="submit" value="Submit">Submit</button>
 
             </form>
     </main>
     <footer>
-        <!- Citation for image used on the page ->
+        <!-- corrected comment syntax -->
+        <!-- Citation for image used on the page -->
             <p style="text-align:center;">Renma, Cris (2016). [Untitled photograph of different disabilities]. Retrieved
                 from <a href="https://pixabay.com/en/accessibility-disability-1682903/">Pixabay</a></p>
     </footer>
 </body>
+<!-- 
+    There were many contrast errors throughout the whole page, so I made the text color darker. For the table headings and footer, I made the background lighter to contrast the new darker font color.
+    I fixed the heading level to go in order from 1 to 2.
+    I removed the font-size property to increase text size and readability.
+    I added fieldsets and legends to each group of form inputs.
+    I added labels to each input and textarea.
 
+ -->
 </html>
